@@ -1,23 +1,22 @@
 /* html */
-
 body {
   background-image: url("images/bg-intro-desktop.png");
-  background-color: hsl(0, 100%, 74%) ;
+  background-color: hsl(0, 100%, 74%);
   font-family: 'Poppins', sans-serif;
   color: #fff;
 }
-b{
-  font-weight:600;
+
+b {
+  font-weight: 600;
 }
 
-
 /* First container */
-
 .firstCon {
   text-align: left;
   padding-top: 21%;
   padding-left: 15%;
 }
+
 .main-head {
   font-family: "Montserrat", sans-serif;
   font-size: 3rem;
@@ -25,46 +24,51 @@ b{
 }
 
 /* second container */
-
 .secondCon {
   padding: 9% 5%;
 }
 
-.button-top {
-  font-size: 1.3rem;
-  text-align: center;
-  color: #fff;
+.try-it{
   background-color: hsl(248, 32%, 49%);
-  margin-bottom: 20px;
-  box-shadow: 7px 5px 5px #a64942;
+  border-radius: 10px;
+  padding: .8em;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 16px;
+  box-shadow: 1px 6px #d96667;
 }
 
 /* form */
-.form-sec{
+.form-sec {
   background-color: #fff;
-  padding: 2%;
+  padding: 1rem;
+  margin-top: 20px;
   border-radius: 2%;
   height: 450px;
-  box-shadow: 7px 5px 5px #a64942;
+  box-shadow: 1px 6px #d96667;
 }
-.form-control{
+
+.form-control {
   padding: 12px 10px;
   margin-top: 20px;
   margin-bottom: 23px;
   margin-left: 3px;
   margin-right: 7px;
 }
-.Submit-btn{
+
+.Submit-btn {
   background-color: hsl(154, 59%, 51%);
   margin-bottom: 20px;
   box-shadow: 5px 5px 5px #75b79e;
 }
-.bottom{
+
+.bottom {
   color: hsl(246, 25%, 77%);
   text-align: center;
 }
-.terms-condition{
-    color: hsl(0, 100%, 74%) ;
+
+.terms-condition {
+  color: hsl(0, 100%, 74%);
 }
 
 /* footer */
@@ -73,29 +77,34 @@ b{
   text-align: center;
 }
 
-
-
-
 @media (max-width: 990px) {
+  body {
+    background-image: url("images/bg-intro-mobile.png");
+  }
+
   .ahead {
     font-size: 3rem;
     margin-bottom: 25px;
     padding: 2% 8%;
   }
+
   .firstCon {
     text-align: center;
     padding-top: 15%;
     padding-left: 0%;
   }
-  .small-head{
+
+  .small-head {
     text-align: center;
     padding: 1% 8%;
     font-size: 1.2rem;
   }
+
   .b {
     padding: 3% 6% 6%;
   }
-  .form-sec{
+
+  .form-sec {
     padding: 2% 6%;
   }
 }
