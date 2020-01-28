@@ -1,0 +1,101 @@
+/* html */
+
+body {
+  background-image: url("images/bg-intro-desktop.png");
+  background-color: hsl(0, 100%, 74%) ;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+}
+b{
+  font-weight:600;
+}
+
+
+/* First container */
+
+.firstCon {
+  text-align: left;
+  padding-top: 21%;
+  padding-left: 15%;
+}
+.main-head {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+/* second container */
+
+.secondCon {
+  padding: 9% 5%;
+}
+
+.button-top {
+  font-size: 1.3rem;
+  text-align: center;
+  color: #fff;
+  background-color: hsl(248, 32%, 49%);
+  margin-bottom: 20px;
+  box-shadow: 7px 5px 5px #a64942;
+}
+
+/* form */
+.form-sec{
+  background-color: #fff;
+  padding: 2%;
+  border-radius: 2%;
+  height: 450px;
+  box-shadow: 7px 5px 5px #a64942;
+}
+.form-control{
+  padding: 12px 10px;
+  margin-top: 20px;
+  margin-bottom: 23px;
+  margin-left: 3px;
+  margin-right: 7px;
+}
+.Submit-btn{
+  background-color: hsl(154, 59%, 51%);
+  margin-bottom: 20px;
+  box-shadow: 5px 5px 5px #75b79e;
+}
+.bottom{
+  color: hsl(246, 25%, 77%);
+  text-align: center;
+}
+.terms-condition{
+    color: hsl(0, 100%, 74%) ;
+}
+
+/* footer */
+.attribution {
+  padding: 1% 5%;
+  text-align: center;
+}
+
+
+
+
+@media (max-width: 990px) {
+  .ahead {
+    font-size: 3rem;
+    margin-bottom: 25px;
+    padding: 2% 8%;
+  }
+  .firstCon {
+    text-align: center;
+    padding-top: 15%;
+    padding-left: 0%;
+  }
+  .small-head{
+    text-align: center;
+    padding: 1% 8%;
+    font-size: 1.2rem;
+  }
+  .b {
+    padding: 3% 6% 6%;
+  }
+  .form-sec{
+    padding: 2% 6%;
+  }
+}
