@@ -11,7 +11,7 @@ b {
 }
 
 /* First container */
-.firstCon {
+.firstContainer {
   text-align: left;
   padding-top: 21%;
   padding-left: 15%;
@@ -24,7 +24,7 @@ b {
 }
 
 /* second container */
-.secondCon {
+.secondContainer {
   padding-top:7%;
   padding-right: 8%;
   padding-bottom: 5%
@@ -41,7 +41,7 @@ b {
 }
 
 /* form */
-.form-sec {
+.form-section {
   background-color: #fff;
   padding: 1rem;
   margin-top: 20px;
@@ -52,16 +52,8 @@ b {
 .form-control{
   padding: 2%;
 }
-.onSubmitWrong{
-  border: 2px solid hsl(0, 100%, 74%);
-  border-radius: 4px;
-}
-.onSubmitRight{
-  border: 2px solid hsl(154, 59%, 51%);
-  border-radius: 4px;
-}
+
 .errorMessage{
-  /* color: hsl(0, 100%, 74%); */
   text-align: right;
   font-size: 0.8em;
 }
@@ -76,6 +68,10 @@ b {
   color: hsl(246, 25%, 77%);
   text-align: center;
 }
+.onSubmitWrong{
+  border: 2px solid hsl(0, 100%, 74%);
+  border-radius: 4px;
+}
 
 .terms-condition {
   color: hsl(0, 100%, 74%);
@@ -87,21 +83,26 @@ b {
   text-align: center;
 }
 
+/* Mobile Phone */
+
 @media (max-width: 990px) {
   body {
     background-image: url("images/bg-intro-mobile.png");
   }
 
-  .ahead {
+  .main-head {
     font-size: 3rem;
     margin-bottom: 25px;
     padding: 2% 8%;
   }
 
-  .firstCon {
+  .firstContainer {
     text-align: center;
     padding-top: 15%;
     padding-left: 0%;
+  }
+  .first-name{
+    margin-top: 15px;
   }
 
   .small-head {
@@ -110,11 +111,11 @@ b {
     font-size: 1.2rem;
   }
 
-  .b {
+  .secondContainer{
     padding: 3% 6% 6%;
   }
 
-  .form-sec {
+  .form-section {
     padding: 2% 6%;
   }
 }
