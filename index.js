@@ -5,32 +5,48 @@ function submitForm() {
   var lastName = document.querySelector(".last-name").value;
   var email = document.getElementById("inputEmail").value;
   var pass = document.getElementById("inputPassword").value;
+  var atPosition = email.indexOf("@");
+  var dotPosition = email.lastIndexOf(".");
+  var emailLength = email.length;
+
+// First Name Check
+
   if (firstName.length === 0) {
-    document.getElementById("first-name").style.color="hsl(0, 100%, 74%)";
+    document.getElementById("first-name").style.color = "hsl(0, 100%, 74%)";
     document.querySelector(".first-name").classList.add("onSubmitWrong");
+  } else {
+    document.getElementById("first-name").style.color = "#fff";
+    document.querySelector(".first-name").classList.remove("onSubmitWrong");
   }
-  else{
-    document.querySelector(".first-name").classList.add("onSubmitRight");
-  }
-   if (lastName.length === 0) {
-    document.getElementById("last-name").style.color="hsl(0, 100%, 74%)";
+
+// Last Name Check
+
+  if (lastName.length === 0) {
+    document.getElementById("last-name").style.color = "hsl(0, 100%, 74%)";
     document.querySelector(".last-name").classList.add("onSubmitWrong");
+  } else {
+    document.getElementById("last-name").style.color = "#fff";
+    document.querySelector(".last-name").classList.remove("onSubmitWrong");
+  }
+
+// Email Check
+
+  if ((emailLength-dotPosition) === 4 && (dotPosition > atPosition) && (dotPosition-atPosition) === 6 && atPosition>=1){
+    document.getElementById("email").style.color = "#fff";
+    document.querySelector(".emailA").classList.remove("onSubmitWrong");
   }
   else{
-    document.querySelector(".last-name").classList.add("onSubmitRight");
-  }
-  if (email.length === 0) {
-    document.getElementById("email").style.color="hsl(0, 100%, 74%)";
+    document.getElementById("email").style.color = "hsl(0, 100%, 74%)";
     document.querySelector(".emailA").classList.add("onSubmitWrong");
   }
-  else{
-    document.querySelector(".emailA").classList.add("onSubmitRight");
-  }
-  if (pass.length < 6){
-    document.getElementById("password").style.color="hsl(0, 100%, 74%)";
+
+// Password Check
+
+  if (pass.length < 6) {
+    document.getElementById("password").style.color = "hsl(0, 100%, 74%)";
     document.querySelector(".passwordA").classList.add("onSubmitWrong");
-  }
-  else{
-    document.querySelector(".passwordA").classList.add("onSubmitRight");
+  } else {
+    document.getElementById("password").style.color = "#fff";
+    document.querySelector(".passwordA").classList.remove("onSubmitWrong");
   }
 }
