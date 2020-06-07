@@ -32,7 +32,7 @@ function submitForm() {
 // Email Check
 
   if ((emailLength-dotPosition) === 4 && (dotPosition > atPosition) && (dotPosition-atPosition) === 6 && atPosition>=1){
-    document.getElementById("email").style.color = "#fff";
+    document.getElementById("email").style.color = "#ffff";
     document.querySelector(".emailA").classList.remove("onSubmitWrong");
   }
   else{
@@ -46,7 +46,7 @@ function submitForm() {
     document.getElementById("password").style.color = "hsl(0, 100%, 74%)";
     document.querySelector(".passwordA").classList.add("onSubmitWrong");
   } else {
-    document.getElementById("password").style.color = "#fff";
+    document.getElementById("password").style.color = "#ffff";
     document.querySelector(".passwordA").classList.remove("onSubmitWrong");
   }
 }
